@@ -1,0 +1,19 @@
+[project]
+name = "mock-sales-api"
+version = "0.1.0"
+description = "This is an api that creates mock sales data for an API"
+authors = [
+    {name = "kyle1cooper",email = "greycooper@gmail.com"}
+]
+readme = "README.md"
+requires-python = "3.10.13"
+dependencies = [
+    "faker (>=37.3.0,<38.0.0)",
+    "flask (>=3.1.1,<4.0.0)",
+    "flask-restful (>=0.3.10,<0.4.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
