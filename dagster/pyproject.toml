@@ -1,0 +1,18 @@
+[project]
+name = "kyles-dagster"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "kyle1cooper",email = "greycooper@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "dagster (>=1.10.20,<2.0.0)",
+    "dagster-webserver (>=1.10.20,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

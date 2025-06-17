@@ -1,0 +1,49 @@
+# === General Python ===
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.log
+
+# === Poetry ===
+poetry.lock
+.cache/
+.pytest_cache/
+.mypy_cache/
+.tox/
+
+# === Virtual Environments ===
+.env/
+.venv/
+venv/
+ENV/
+
+# === Airflow ===
+airflow_home/
+airflow.db
+*.pid
+*.sqlite
+logs/
+
+# === Dagster ===
+dagster_logs/
+dagster_event_logs/
+.dagster/
+
+# === Flask / API Runtime ===
+instance/
+*.db
+*.sqlite3
+
+# === VSCode ===
+.vscode/
+
+# === PyCharm ===
+.idea/
+
+# === System ===
+.DS_Store
+Thumbs.db
