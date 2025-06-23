@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  grafana:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ../data:/data  # Mount the DuckDB file for Grafana to read
+      - grafana-storage:/var/lib/grafana  # Persist Grafana config, dashboards
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_INSTALL_PLUGINS=frser-sqlite-datasource  # Just to be safe
+
+volumes:
+  grafana-storage:
